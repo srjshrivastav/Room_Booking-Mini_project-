@@ -1,0 +1,78 @@
+body
+{
+margin: 1rem;
+padding:0;
+background: url('Images/pic.jpg');
+background-size: cover;
+font-family: "sans-sarif";
+}
+.payBox
+{
+position:absolute;
+top: 55%;
+left: 20%;
+transform: translate(-50%,-50%);
+width:350px;
+height:420px;
+padding:20px 40px;
+box-sizing:border-box;
+border-radius: 20px;
+background: rgba(0,0,0,.5);
+}
+.payBox p
+{   position: relative;
+	top: 2%;
+	left: 7%;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size:18px;
+	color:#fff;
+}
+.payBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.payBox input[type="date"],
+.payBox input[type="text"],
+.payBox input[type="number"]
+{
+	border:none;
+	border-bottom:1px solid #FFD700;
+	background:transparent;
+	outline:none;
+	color: #FFD700;
+	height:40px;
+	font-size:16px;
+}
+::placeholder
+{
+	color: #FFD700;
+}
+::-ms-input-placeholder{
+	color: #FFD700;
+}
+.payBox input[type="submit"]
+{
+	border:none;
+	outline:none;
+	height:30px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff267e;
+	cursor:pointer;
+	border-radius: 20px;
+}
+.payBox input[type="submit"]:hover
+{
+	background: #efed40;
+	color: #262626;
+}
+.payBox a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
