@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="CSS/payment.css">
+    <link href="CSS/datedropper.css" rel="stylesheet">
+    <link href="CSS/my-style.css" rel="stylesheet">
+        <script src="Java/jquery-1.10.2.min.js"></script>
+        <script src="Java/datedropper.js"></script>
+        <script src="Java/payment.js"></script>
+</head>
+<body>
+    <h1 style="height: 100px width :20px;"><center><i>Hotel Clarks Amer</i></h1></center>
+    <div class="payBox">
+         <p>Payment By Debit/Credit Card</p><br><br>
+         <form name="MyForm" onsubmit="validate()">
+              <input type="number" name="cardNo" placeholder="Card No." required><br>
+              <input type="number" name="Cvv" placeholder="CVV" required><br>
+              <input type="date" name="Exp" required data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" data-theme="my-style"><br>
+              <input type="text" name="name" placeholder="Name on card(Optional)"><br><br>
+              <input type="submit" value="Pay Now">
+         </form>
+    </div>
+    <script>
+            $('input[type="date"]').dateDropper();
+        </script>
+</body>
+   
+</html>
+</html>                                    

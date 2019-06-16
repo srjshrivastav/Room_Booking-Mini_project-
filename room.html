@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Room Details</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+	<link href="CSS/datedropper.css" rel="stylesheet">
+	<link href="CSS/my-style.css" rel="stylesheet">
+        <script src="Java/jquery-1.10.2.min.js"></script>
+        <script src="Java/datedropper.js"></script>
+</head>
+<body>
+	<h1 style="height: 100px width :10px; "><center><i>Hotel Clarks Amer</i></h1></center>
+	<div class="Log"> 
+		<a href="ClarksAmer.html"><label>Log Out</label></a>
+	</div>
+	<div class="box">
+		<h2>BOOK YOUR ROOM</h2>
+			<div class="inputBox">
+				<form action="payment.html">
+				       &emsp;&emsp;&emsp;<label>Check In :</label>
+				        <input type="date" name="checkin" required data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" data-theme="my-style"/>&emsp;&emsp;&emsp;&emsp;&emsp;
+				        <label>Check out :</label>
+				        <input type="date" name="checkout" required data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" data-theme="my-style"/><br><br>
+				        &emsp;&emsp;&emsp;<label>Guests :</label><input type="text" name="Nguest" placeholder="No. of Guests">&emsp;&emsp;&emsp;&emsp;&emsp;
+				        <select>
+					            <option value="">Do You want Balcony?</option>
+					            <option>YES</option>
+					            <option>NO</option>
+				        </select><br><br>
+				     &emsp;&emsp;&emsp;<label>Purpose :</label><input type="text" name="prp" placeholder="Ex: Holidays" autocomplete="off"><br><br>
+				        <input type="submit" value="BOOK NOW">
+		        </form>
+		        <br><h3>Or</h3><br>
+		        <h3><a href="home.html">Contact Us</a></h3>
+		    </div>
+	</div>	    
+		<script>
+            $('input[type="date"]').dateDropper();
+        </script>
+</body>
